@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --color-primary:#e9e8ff;
+    --color-header:#cdcde6;
+    --color-success:#06a506;
+    --color-danger:#cb0c0c;
+    --color-warning:#f5f50b;
+    --color-font:#ffffffdb;
+    --color-orange:#C35817;
+    --color-blue:#167aa1;
+    --color-pink:#b14355;
+    --color-yellow:#aba007;
+    --font: 'Montserrat', sans-serif;
+    --transition:all 400ms ease;
+
+    --container-width-large:80%;
+    --container-width-medium:90%;
+    --container-width-small:94%;
+    
+}
+
+body{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle,  rgba(4, 6, 27, 0.929) 10%, rgb(4, 6, 27) 100%),url('../images/pattern1.png');
+    background-size: 40%;
+    background-repeat:repeat;
+    background-position: center;
+    
+    font-family: var(--font);
+    line-height: 1.7;
+    color: var(--color-font);
+    height: 100vh;
+}
+
+
+.container{
+    width: var(--container-width-large);
+    margin: 0 auto;
+   
+}
+
+section{
+    padding: 3rem 0;
+}
+section h2{
+    text-align: center;
+    margin: 4rem;
+}
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+}
+h1{
+    font-size: 2.4rem;
+    /* color: var(--color-orange); */
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.3rem;
+}
+
+a{
+    color: var(--color-header);
+}
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.btn{
+    display: inline-block;
+    background:white;
+    color: black;
+    padding: .8rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+.btn:hover{
+    background: transparent;
+    color:white;
+    border-color:white;
+}
+
+.btn-primary{
+    padding: 1rem 2rem;
+    background: var(--color-orange);
+    color: var(--color-font);
+}
+.btn-primary:hover{
+    border-color: var(--color-orange);
+    color: var(--color-orange);
+}
+
+
+
+/**==========================  NAVBAR  =================================**/
+
+nav{
+    width: 100vw;
+    height:4rem;
+    position: fixed;
+    top:0;
+    z-index: 999;
+    transition:all 400ms linear;
+}
+
+         /*======= CHANGE NAVBAR WHILE SCROLLING=======*/
+
+.nav-scroll{
+    background-color: rgba(0, 0, 0, 0.595);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.595);
+}
+
+         /*===========================================*/
+
+.nav_container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button{
+    display: none;
+}
+.logo{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--color-orange);
+
+}
+.list{
+    display: flex;
+    align-items: center;
+    gap:3.5rem;  /*space between each li*/
+}
+.list a{
+    font-size: 1rem;
+    font-weight:300;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    letter-spacing: .1rem;
+    transition: var(--transition);
+
+}
+.list a::before{
+content: '';
+position: absolute;
+right: 0;
+bottom: 0;
+height:0;
+border: 1px solid transparent;
+border-left: none;
+border-right: none;
+width:100%;
+z-index: -1;
+transition: var(--transition);
+}
+
+
+    .list a:hover::before{
+      height: 100%;
+      border-color: var(--color-orange);
+   }
+ 
+
+   .list a:hover{
+    
+    padding: 2px;
+    color: var(--color-orange);
+   }
+
+
+
+
