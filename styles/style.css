@@ -418,6 +418,57 @@ margin-block:1rem 2.4rem;
     display: block;
    }
 
+  /**==========================  TESTIMONIALS  =================================**/ 
+   
+  .testimonials-container{
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+   }
+
+   .testimonial{
+    padding-top: 2rem;
+   
+   }
+
+   .avatar{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 6px solid rgb(22, 25, 51);
+
+   }
+   .testimonial-info{
+    text-align: center;
+    margin-bottom: 1.8rem;
+ 
+    
+   }
+
+   .testimonial-body{
+    margin-top: 1%;
+    background: var(--color-blue);
+    padding: 1rem;
+    position: relative;
+    
+    
+
+   }
+   .testimonial-body::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:-11px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+   transform: rotate(45deg);
+    background: var(--color-blue);
+   
+   }
+
 
      
      

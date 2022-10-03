@@ -237,13 +237,129 @@
     
                 </div>
              </section>
-    
+        <!------------------------ TESTIMONIALS---------------------------->
+
+
+        <section class="container testimonials-container mySwiper">
+            <h2>Testimonials</h2>
+            <div class="swiper-wrapper">
+                
+                
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/christina.jpg" alt="">
+                    </div>
+                    <div class="testimonial-info">
+                        <h5>Christina</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis magnam aut, in quam beatae, quasi eveniet saepe, non dolores harum natus repudiandae? Impedit error perferendis illo veritatis officiis, facere quo?
+                        </p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/Ian.jpg" alt="">
+                    </div>
+                    <div class="testimonial-info">
+                        <h5>Ian</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis magnam aut, in quam beatae, quasi eveniet saepe, non dolores harum natus repudiandae? Impedit error perferendis illo veritatis officiis, facere quo?
+                        </p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/Leon.jpg" alt="">
+                    </div>
+                    <div class="testimonial-info">
+                        <h5>Leon</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis magnam aut, in quam beatae, quasi eveniet saepe, non dolores harum natus repudiandae? Impedit error perferendis illo veritatis officiis, facere quo?
+                        </p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/Rafaella.jpg" alt="">
+                    </div>
+                    <div class="testimonial-info">
+                        <h5>Rafaella</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis magnam aut, in quam beatae, quasi eveniet saepe, non dolores harum natus repudiandae? Impedit error perferendis illo veritatis officiis, facere quo?
+                        </p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/Michael.jpg" alt="">
+                    </div>
+                    <div class="testimonial-info">
+                        <h5>Michael</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis magnam aut, in quam beatae, quasi eveniet saepe, non dolores harum natus repudiandae? Impedit error perferendis illo veritatis officiis, facere quo?
+                        </p>
+                    </div>
+                </article>
+            
+           
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
+        </section>
+ 
+
     
     
 
 
  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./main.js"></script>
+<script>
+ var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+        /////// when windows is >= 600px
+        breakpoints:{
+            600:{
+                slidesPerView:2
+            }
+        }
+        
+      });
+
+</script>
 
   </body>
 </html>
