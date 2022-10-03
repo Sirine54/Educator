@@ -178,17 +178,141 @@ transition: var(--transition);
 }
 
 
-    .list a:hover::before{
-      height: 100%;
-      border-color: var(--color-orange);
+.list a:hover::before{
+    height: 100%;
+    border-color: var(--color-orange);
+}
+
+
+.list a:hover{
+
+padding: 2px;
+color: var(--color-orange);
+}
+
+   /**==========================  MAIN  =================================**/
+
+
+   main{
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+ 
+   }
+   .main{
+display: grid;
+grid-template-columns: 60% 40%;
+align-items: center;
+gap:4rem;
+height: 100%;
+   }
+
+   .main-left p{
+margin-block:1rem 2.4rem;
+   }
+
+   /**==========================  CATEGORIES  =================================**/
+
+   .categories{
+    background-color:rgb(22, 25, 51);
+    height: 27rem;
+   }
+   .categories h1{
+    line-height: 1;
+    margin-bottom: 3rem;
    }
  
 
-   .list a:hover{
-    
-    padding: 2px;
-    color: var(--color-orange);
+   .categories-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap:4rem;
    }
+
+   .categories-left{
+    width: 100%;
+    position: relative;
+    margin-right: 1rem;
+   }
+
+   .read-more{
+    display: none;
+   }
+   .read-more-show{
+    display: inline;
+   }
+   .categories-left p{
+       margin: 1rem 0 2rem;
+    }
+
+
+  .categories-right{
+    /* position: absolute;
+    
+    right:2%; */
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1.6rem;
+   }
+
+   .category{
+   
+        background-color: rgba(83, 83, 115, 0.34);
+        backdrop-filter: blur(8px);
+        padding: 1rem 2rem;
+        border-radius:2rem;
+        width: 100%;
+        transition: var(--transition);
+
+       
+   }
+   .category:hover{
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+   }
+  
+   .categ-icon{
+
+    background-color: #C35817;
+    justify-self: center;
+    padding: 15px;
+    border-radius: 4rem;
+   }
+   .category h4{
+    margin: 2rem 0 1rem;
+   }
+
+   .category p{
+    font-size: .9rem;
+   }
+
+   .category:nth-child(2) .categ-icon{
+    background: var(--color-danger);
+   }
+   .category:nth-child(3) .categ-icon{
+    background: var(--color-success);
+   }
+   .category:nth-child(4) .categ-icon{
+    background: var(--color-blue);
+   }
+   .category:nth-child(5) .categ-icon{
+    background: var(--color-pink);
+   }
+   .category:nth-child(6) .categ-icon{
+    background: var(--color-yellow);
+   }
+
+
+
+
+ 
+
+
+
+
+
 
 
 
