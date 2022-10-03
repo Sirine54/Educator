@@ -305,7 +305,122 @@ margin-block:1rem 2.4rem;
    }
 
 
+      /**==========================  COURSES  =================================**/
 
+      .courses{
+        margin-top: 14em;
+        background-color: rgba(0, 0, 0, 0.397);
+      }  
+     
+      .courses h1{
+         margin:2rem 9rem;
+      }
+      .courses-container{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         gap: 3rem;
+     
+      }   
+     
+      .course{
+         background-color: rgba(83, 83, 115, 0.341);
+         border:1px solid rgba(255, 254, 254, 0.193);
+         padding: 2rem;
+         border-radius:5px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+     
+     
+     .course-img{
+      
+     background-color:rgb(2, 2, 26);  
+     border-radius:57% 43% 68% 32% / 59% 69% 31% 41% ;
+     outline: 1px solid rgba(255, 254, 254, 0.375);
+     
+     outline-offset: 10px;
+     outline-style:groove;
+     margin-bottom:2rem;
+     transition: var(--transition);
+     overflow:hidden ;
+     
+      }
+      .course-img  img{
+         transition: var(--transition);
+      }
+      .course-img:hover img{
+        transform: scale(0.9);
+      
+     
+      }
+      .course-img:hover{
+         outline-offset: 4px;
+       }
+     
+       .course h4{
+       color: var(--color-orange);
+       padding-block-end: 1rem;
+       }
+      
+      .course p{
+        font-size:.9rem;
+        padding-block-end: 2rem;
+         }
+        .course a{
+         padding: .8rem 1.5rem;
+        }
+     
+
+  /**==========================  QUESTION ANSWER  =================================**/
+
+  .faqs{
+    background-color:rgb(22, 25, 51);
+    box-shadow:inset 0 0 3rem rgba(0, 0, 0, 0.66);
+   }
+
+   .faqs-container{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 1rem;
+   }
+
+   .faq{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--color-blue);
+    cursor: pointer;
+   }
+
+   .faq h4{
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 2.2;
+    color:rgb(22, 25, 51);
+   }
+
+
+   .faq-icon{
+    align-self: flex-start;
+    font-size: 1.5rem;
+   
+   }
+   
+   .faq p{
+    font-size: .9rem;
+    display: none;
+   }
+
+   .faq.open p{
+    display: block;
+   }
+
+
+     
+     
 
  
 
