@@ -44,3 +44,22 @@ faqs.forEach((faq) => {
     }
   });
 });
+
+
+////////////////// S/H MENU  ///////////////////
+
+const menu=document.querySelector('.list');
+const menuOpen = document.getElementById('open-menu-btn');
+const menuClose = document.getElementById('close-menu-btn');
+
+menuOpen.addEventListener('click',()=>{
+  menu.style.display="flex";
+  menuClose.style.display="inline-block";
+  menuOpen.style.display="none"
+})
+
+menuClose.addEventListener('click',()=>{
+  menu.style.display="none";
+  menuOpen.style.display="inline-block";
+  menuClose.style.display="none"
+})

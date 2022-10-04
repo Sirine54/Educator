@@ -11,7 +11,7 @@
     
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
-
+@import url('animate.css');
 :root{
     --color-primary:#e9e8ff;
     --color-header:#cdcde6;
@@ -125,11 +125,15 @@ nav{
          /*======= CHANGE NAVBAR WHILE SCROLLING=======*/
 
 .nav-scroll{
-    background-color: rgba(0, 0, 0, 0.595);
+    background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
     box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.595);
 }
 
+.nav-scroll .logo,
+.nav-scroll button{
+    color: white;
+}
          /*===========================================*/
 
 .nav_container{
@@ -146,6 +150,7 @@ nav button{
     font-size: 1.2rem;
     text-transform: uppercase;
     color: var(--color-orange);
+    font-weight: 600;
 
 }
 .list{
@@ -217,7 +222,7 @@ margin-block:1rem 2.4rem;
 
    .categories{
     background-color:rgb(22, 25, 51);
-    height: 27rem;
+    height: 30rem;
    }
    .categories h1{
     line-height: 1;
@@ -398,7 +403,7 @@ margin-block:1rem 2.4rem;
    .faq h4{
     font-size: 1rem;
     font-weight: 800;
-    line-height: 2.2;
+    line-height: 1.2;
     color:rgb(22, 25, 51);
    }
 
@@ -529,9 +534,125 @@ margin-block:1rem 2.4rem;
   
  }
 
+   /**==========================  MEDIA QUERIES  =================================**/ 
+     
+ @media screen and (max-width:1060px){
+    .container{
+        margin: 0 5rem;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
 
-     
-     
+    .container p{
+        font-size: .9rem;
+    }
+    .categories-container{
+      gap: 1.4rem;
+    }
+    .category{
+        padding:1rem;
+    }
+    .courses h1{
+        margin: 1rem 5rem;
+    }
+ }    
+
+ @media screen and (max-width:1024px){
+    .container{
+        width: var(--container-width-medium);
+        margin:.2rem auto;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+
+/**==========================  NAVBAR  =================================**/
+
+nav button{
+    display: inline-block;
+    background: transparent;
+    color: var(--color-orange);
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-right:5%;
+    border: none;
+}
+nav button#close-menu-btn{
+    display: none;
+}
+.list{
+    position: fixed;
+    top: 5rem;
+    right: 6%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 0;
+    width: 18rem;
+    display: none;
+    overflow: hidden;
+    
+}
+.list li{
+    width: 100%;
+    height: 5.8rem;
+    animation: flipInX 1s linear forwards;
+    transform-origin: top center;
+}
+
+
+
+.list li a{
+    background-color: var(--color-blue);
+    box-shadow: -4rem 6rem 10rem rgba(0,0,0,.6);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    
+}
+
+
+.list li a:hover{
+    color: white;
+    background: #0d4a63c7;
+}
+.list li a::before{
+    display: none;
+}
+
+
+/**==========================  NAVBAR  =================================**/
+
+.main{
+   
+    margin-bottom: 4rem;
+    gap: 0;
+   
+}
+
+/**==========================  CATEGORIES  =================================**/
+.categories{
+   height: 100%;
+}
+.categories-container{
+    display: flex;
+    flex-direction: column;
+}
+
+/**==========================  COURSES  =================================**/
+
+.courses{
+    margin-top: 3rem;
+}
+}
 
  
 
