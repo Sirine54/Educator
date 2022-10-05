@@ -560,6 +560,8 @@ height: 100%;
 
 
 
+
+
  @media screen and (max-width:1024px){
     .container{
         width: var(--container-width-medium);
@@ -683,6 +685,10 @@ nav button#close-menu-btn{
 
 
 
+
+
+
+
 @media screen and (max-width:670px) {
    .container{
     width: var(--container-width-small);
@@ -708,14 +714,65 @@ nav button#close-menu-btn{
    
    /**==========================  CATEGORIES  =================================**/
 .categories{
-    height: 100%;
+    height: 140vh;
 }
 .categories-container{
-    height: 100%;
+    height:100%;
+    
 }
    .categories-right{
     grid-template-columns: 1fr 1fr;
+    gap: .8rem;
    }
+
+      /**==========================  COURSES  =================================**/
+
+        .courses{
+            margin: 0;
+            padding: 1rem 0;
+        }
+   .courses-container{
+grid-template-columns: 1fr;
+   }
+}
+
+
+
+
+@media screen and (max-width:405px) {
+
+
+       /**==========================  CATEGORIES  =================================**/
+.categories{
+    height:auto;
+}
+.categories-container{
+   text-align: center;
+}
+   .categories-right{
+    grid-template-columns: 1fr;
+    gap: .8rem;
+   }
+
+       /**==========================  TESTIMONIALS =================================**/
+
+      .testimonials-container h2{
+        padding: 0;
+        margin: 0;
+      }
+
+
+        /**==========================  FOOTER =================================**/
+
+
+     .footer-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+     }   
+     .social-media{
+      align-items: center;
+      justify-content: center;
+     }
 }
 
  
