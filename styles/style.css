@@ -525,7 +525,11 @@ height: 100%;
     outline-offset: 3px;
  }
 
+.container>.footer-copyRight{
+    margin:0 !important;
+}
  .footer-copyRight{
+
     color: rgba(245, 245, 245, 0.796);
    width: 100%;
    text-align: center;
@@ -533,6 +537,9 @@ height: 100%;
    border-top: 1px solid rgba(101, 92, 92, 0.577);
   
  }
+
+
+
 
    /**==========================  MEDIA QUERIES  =================================**/ 
      
@@ -690,11 +697,22 @@ nav button#close-menu-btn{
 
 
 @media screen and (max-width:670px) {
+
+
+
    .container{
     width: var(--container-width-small);
    }
 
 
+     /**==========================  NAVBAR  =================================**/
+
+
+     .list{
+        top:4rem;
+        right: 0;
+        width: 100%;
+     }
 
    /**==========================  MAIN  =================================**/
 
@@ -714,7 +732,7 @@ nav button#close-menu-btn{
    
    /**==========================  CATEGORIES  =================================**/
 .categories{
-    height: 140vh;
+    height:auto;
 }
 .categories-container{
     height:100%;
@@ -739,7 +757,7 @@ grid-template-columns: 1fr;
 
 
 
-@media screen and (max-width:405px) {
+@media screen and (max-width:415px) {
 
 
        /**==========================  CATEGORIES  =================================**/

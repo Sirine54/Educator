@@ -48,9 +48,10 @@ faqs.forEach((faq) => {
 
 ////////////////// S/H MENU  ///////////////////
 
+
 const menu=document.querySelector('.list');
-const menuOpen = document.getElementById('open-menu-btn');
-const menuClose = document.getElementById('close-menu-btn');
+const menuOpen = document.querySelector('#open-menu-btn');
+const menuClose = document.querySelector('#close-menu-btn');
 
 menuOpen.addEventListener('click',()=>{
   menu.style.display="flex";
