@@ -1,0 +1,106 @@
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('animate.css');
+:root{
+    --color-primary:#e9e8ff;
+    --color-header:#cdcde6;
+    --color-success:#06a506;
+    --color-danger:#cb0c0c;
+    --color-warning:#f5f50b;
+    --color-font:#ffffffdb;
+    --color-orange:#C35817;
+    --color-blue:#167aa1;
+    --color-pink:#b14355;
+    --color-yellow:#aba007;
+    --font: 'Montserrat', sans-serif;
+    --transition:all 400ms ease;
+
+    --container-width-large:80%;
+    --container-width-medium:90%;
+    --container-width-small:94%;
+    
+}
+
+
+
+/**==========================  ACHIEVEMENT  =================================**/ 
+
+
+.achievement{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    position: relative;
+    gap: 1.2rem;
+   padding-top:8%;
+}
+
+.achievement-left{
+  background: #00000069;
+  border-radius:61% 39% 68% 32% / 59% 69% 31% 41% ;
+}
+/* .achievement-left img{
+    height: 100%;
+} */
+.achievement-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.achievement-cards{
+ 
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 4rem;
+/* place-items: center; */
+text-align: center;
+margin-top: 3rem;
+}
+
+.card{
+    background: rgba(11, 11, 28, 0.556);
+    padding: 2rem 3rem;
+    border-radius: 5px;
+    border-bottom: 14px solid var(--color-blue);
+    
+}
+.card:hover{
+    box-shadow: inset 0 0 0 0 #54b3d6;
+}
+.card .icon-card{
+    color: var(--color-blue);
+    font-size: 3rem;
+    margin-block: 2rem;
+    background: rgba(0, 0, 0, 0.423);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.card h3{
+    margin-block: .7rem;
+}
+.card p{
+    text-transform: uppercase;
+    color: rgba(245, 245, 245, 0.779);
+}
+
+
+/**==========================  EXPERTS  =================================**/ 
+
+.experts{
+    background: blue;
+}

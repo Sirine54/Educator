@@ -248,6 +248,9 @@ height: 100%;
    .read-more-show{
     display: inline;
    }
+   .dots{
+    display: inline;
+   }
    .categories-left p{
        margin: 1rem 0 2rem;
     }
@@ -480,6 +483,7 @@ height: 100%;
    .footer{
     background-color: rgba(0, 0, 0, 0.397);
     padding-block-start: 1.5em;
+
 }
 
 .footer-container{

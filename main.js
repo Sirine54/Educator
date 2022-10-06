@@ -6,25 +6,7 @@ window.addEventListener("scroll", () => {
     .classList.toggle("nav-scroll", window.scrollY > 0);
 });
 
-////////////////// READ MORE ///////////////////
 
-const readMoreContainer = document.querySelector(".categories-left");
-
-readMoreContainer.addEventListener("click", () => {
-  const current = event.target;
-  console.log(current);
-
-  const isReadMoreBtn = current.className.includes("btn-more");
-
-  if (!isReadMoreBtn) return;
-
-  const currentText = event.target.parentNode.querySelector(".read-more");
-  currentText.classList.toggle("read-more-show");
-
-  current.textContent = current.textContent.includes("Read More")
-    ? "read less"
-    : "Read more";
-});
 
 ////////////////// QUESTION FREQUENT ///////////////////
 
@@ -64,3 +46,80 @@ menuClose.addEventListener('click',()=>{
   menuOpen.style.display="inline-block";
   menuClose.style.display="none"
 })
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////About Countup ////////////////////
+
+let counts = document.querySelectorAll('.countUp');
+let interval = 5000;
+
+counts.forEach((count)=>{
+  let startValue = 0;
+  let endValue= parseInt(count.getAttribute("data-val"));
+let duration = Math.floor(interval/endValue);
+let counter=setInterval(function(){
+  startValue+=1;
+  count.textContent=startValue;
+  if(startValue == endValue){
+    clearInterval(counter);
+  }
+},duration)
+})
+
+
+var btnMore=document.querySelector('.btn-more');
+var moreText = document.querySelector('.read-more')
+
+var dots=document.querySelector('.dots');
+
+btnMore.addEventListener('click',()=>{
+
+
+  if(dots.style.display === "none"){
+    dots.style.display="inline";
+    btnMore.innerHTML="Read More"
+    moreText.style.display="none"
+  }else{
+    dots.style.display="none";
+    btnMore.innerHTML="Read Less";
+    moreText.style.display="inline"
+  }
+
+
+})
+
+
+
+
+
+
+
+
+////////////////// READ MORE ///////////////////
+
+// const readMoreContainer = document.querySelector(".categories-left");
+
+// readMoreContainer.addEventListener("click", () => {
+//   const current = event.target;
+//   console.log(current);
+
+//   const isReadMoreBtn = current.className.includes("btn-more");
+
+//   if (!isReadMoreBtn) return;
+
+//   const currentText = event.target.parentNode.querySelector(".read-more");
+//   currentText.classList.toggle("read-more-show");
+
+//   current.textContent = current.textContent.includes("Read More")
+//     ? "read less"
+//     : "Read more";
+// });
