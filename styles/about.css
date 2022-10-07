@@ -49,10 +49,13 @@
 .achievement-left{
   background: #00000069;
   border-radius:61% 39% 68% 32% / 59% 69% 31% 41% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* .achievement-left img{
-    height: 100%;
-} */
+.achievement-left img{
+  width: 100%;
+}
 .achievement-right{
     display: flex;
     flex-direction: column;
@@ -102,5 +105,91 @@ margin-top: 3rem;
 /**==========================  EXPERTS  =================================**/ 
 
 .experts{
-    background: blue;
+    background-color: rgb(22, 25, 51);
+    text-align: center;
+}
+
+.team{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.2rem;
+    place-items: center;
+}
+.expert{
+    background: #070618;
+    padding: 12px;
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+   border-radius: 15px;
+  
+
+}
+.img-wrapper{
+    display: inline-block;
+    overflow: hidden;
+}
+.img-wrapper img{
+    width:290px;
+    height: 300px;
+    object-fit: cover;
+    transition:var(--transition);
+    transition: transform .5s, filter 1.5s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.socialContact{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    position: absolute;
+    padding: 25px;
+     top: 0;
+    /*bottom: 0; */
+    right: 0;
+    background: #070618;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    transform: translateX(100%);
+    
+    transform: perspective(2000px) rotateY(-90deg);
+    transition: .4s all linear;
+
+}
+.socialContact li{
+   
+    transition: var(--transition);
+    font-size: 1.8rem;
+
+}
+.socialContact li:hover{
+    transform: scale(1.6);
+}
+
+.expert:hover img{
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transform: translateX(-10%);
+}
+.expert:hover .socialContact{
+    transform: translateX(0%);
+    
+   
+}
+
+
+/**==========================  MEDIA QUERIES  =================================**/ 
+
+
+
+@media screen and (max-width:1030px){
+/**==========================  ACHIEVEMENT  =================================**/ 
+
+
+.achievement{
+    grid-template-columns:1fr;
+    
+}
 }
